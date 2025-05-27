@@ -10,7 +10,16 @@ repository = "https://github.com/thomascamminady/the_cheat_down_under"
 homepage = "https://github.com/thomascamminady/the_cheat_down_under"
 documentation = "https://thomascamminady.github.io/the_cheat_down_under"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "altair>=5.5.0",
+    "beautifulsoup4>=4.13.4",
+    "html5lib>=1.1",
+    "lxml>=5.4.0",
+    "pandas>=2.2.3",
+    "polars>=1.30.0",
+    "pyarrow>=20.0.0",
+    "vl-convert-python>=1.7.0",
+]
 
 [build-system]
 requires = ["hatchling"]
@@ -36,7 +45,6 @@ lint.ignore = [
     "D401",
     "E501",
 ]
-line-length = 80
 lint.select = [
     "B",
     "B9",
@@ -49,6 +57,7 @@ lint.select = [
     "W",
     "I001",
 ]
+line-length = 80
 exclude = [
   # VCS metadata
   ".git",
